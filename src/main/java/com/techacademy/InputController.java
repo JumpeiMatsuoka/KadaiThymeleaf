@@ -14,11 +14,4 @@ public class InputController {
      model.addAttribute("previous", previous);
      return "input";
      }
-
- // 入力画面からのデータを受け取り、出力画面を表示する
- @PostMapping("/output")
- public String postOutput(@RequestParam("inputValue") String inputValue, Model model) {
-     model.addAttribute("inputValue", inputValue);
-     return "output";
-     }
 }
